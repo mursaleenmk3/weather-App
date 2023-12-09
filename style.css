@@ -12,16 +12,24 @@ body{
 #city_input{
     padding: 10px 10px;
    border: none;
+   border-radius: 10px;
    font-size: 20px;
+   margin-top: 10px;
+ 
 
 }
 #smb{
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin-top: 10px;
     font-size: 20px;
     color: #fff;
     background-color: #ff3300;
     border: none;
+    border-radius: 10px;
+    display: inline-block;
+    &:hover{
+        cursor: pointer;
+    }
 }
 #city_input:focus{
     border: none;
@@ -35,7 +43,7 @@ body{
     text-align: center;
 }
 .card h4{
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 400;
     margin: 1rem 0;
 
@@ -66,4 +74,21 @@ h5{
 }
 .refresh:hover{
     box-shadow: inset 10px 4pc 10pc #252525,inset 5px 5px 18px #4a4a4a;
+}
+@media screen and (min-width:768px) and (max-width:1023px)  {
+    .card{
+        width: 40%;
+}
+    
+}
+@media screen and (min-width:300px) and (max-width:767px)   {
+    .card{
+        width: 70%;
+}
+#city_input{
+
+   font-size: 15px;
+
+}
+    
 }
